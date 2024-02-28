@@ -1,9 +1,9 @@
 class UserData:
     def __init__(self):
-        pass
+        self.data = "aaaa"
 
     def get_data(self):
-        pass
+        return self.data
 
 
 class UserContext:
@@ -11,4 +11,4 @@ class UserContext:
         pass
 
     def get_user_data_by_id(self, id) -> UserData:
-        pass
+        return UserData()
