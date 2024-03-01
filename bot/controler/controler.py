@@ -1,13 +1,13 @@
 from typing import Callable, Any
-from .user_context import UserContext
-from .model import ModelNERNLU
-from .commands.example_comand import Example_command
+from . import UserContext
+from .commands import WeatherCommand
+from bot.ml.model import ModelNERNLU
 
 
 class Controler:
     def __init__(self, user_context: UserContext, model: ModelNERNLU):
         self._user_context = user_context
-        self._command: dict[str, Any] = {"weather_query": Example_command()}
+        self._command: dict[str, Any] = {"weather_query": WeatherCommand()}
         self.model = model
 
     def run(self, user_id, text):

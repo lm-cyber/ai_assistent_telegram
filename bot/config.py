@@ -1,10 +1,11 @@
+from dotenv import dotenv_values
+
+config = dotenv_values(".env")
+REDIS_HOST = config["REDIS_HOST"]
+REDIS_PORT = config["REDIS_PORT"]
+WEATHER_TOKEN = config["WEATHER_TOKEN"]
+
+
 # import os
-
-
-REDIS_HOST = "localhost"
-REDIS_PORT = 6379
-
-TOKENS_FOR_NOT_PERSONAL_SERVICE = {}
-# TOKENS_FOR_NOT_PERSONAL_SERVICE = os.environ.get("TOKENS_FOR_NOT_PERSONAL_SERVICE")
 # REDIS_HOST = os.environ.get("REDIS_HOST")
 # REDIS_PORT = os.environ.get("REDIS_PORT")
