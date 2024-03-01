@@ -1,6 +1,6 @@
-from ml.model import ModelNERNLU
-from ml.controler import Controler
-from ml.user_context import UserContext
+# from ml.model import ModelNERNLU
+# from ml.controler import Controler
+# from ml.user_context import UserContext
 #
 # model = ModelNERNLU()
 #
@@ -18,9 +18,24 @@ from ml.user_context import UserContext
 #     """Члены Американской академии киноискусств решили присудить режиссеру Дэвиду Линчу почетную премию "Оскар" за выдающийся вклад в кинематограф, сообщается на сайте академии. Церемония награждения пройдет 27 октября в развлекательном комплексе Hollywood and Highland Center в Лос-Анджелесе (штат Калифорния, США)."""
 # )
 # print(res)
-import redis
-from config import REDIS_HOST,REDIS_PORT
-r = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, decode_responses=True)
-r.set('foo', 'bar')
+from config import REDIS_HOST, REDIS_PORT
+from redis_dict import RedisDict
 
-print(r.get('foo'))
+dic = RedisDict(host=REDIS_HOST, port=REDIS_PORT)
+# dic['foo'] = 42
+# print(dic['foo'])  # Output: 42
+# print('foo' in dic)  # Output: True
+# dic["baz"] = "hello world"
+# print(dic)  # Output: {'foo': 42, 'baz': 'hello world'}
+#
+# dic['test']={
+#     'tokens':
+#         {
+#             "userid1":
+#              {
+#                  "serves1":"ttt",
+#                  "serves2": "ttt2",
+#              }
+#         }
+# }
+print(dic)

@@ -482,6 +482,20 @@ hiredis = ["hiredis (>=1.0.0)"]
 ocsp = ["cryptography (>=36.0.1)", "pyopenssl (==20.0.1)", "requests (>=2.26.0)"]
 
 [[package]]
+name = "redis-dict"
+version = "2.5.0"
+description = "Dictionary with Redis as storage backend"
+optional = false
+python-versions = "*"
+files = [
+    {file = "redis_dict-2.5.0-py3-none-any.whl", hash = "sha256:bd64bc7c27b6249f2524a524380ea4d516f11e3bdd71b4ec37cda0ade7a666cd"},
+    {file = "redis_dict-2.5.0.tar.gz", hash = "sha256:63b44ab4ae3f8dae5af9e819ac259a24a98843e9b7547832ee358f24c342a709"},
+]
+
+[package.dependencies]
+redis = "*"
+
+[[package]]
 name = "regex"
 version = "2023.12.25"
 description = "Alternative regular expression module, to replace re."
@@ -1058,4 +1072,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "80cb83471fcc825a1f435b6a0555f0114b2867c8691da126df4662a0a8b8ec7b"
+content-hash = "99b3934f202a41ee0639700bddae320d582a7f2469b77c11238352ef754f0498"

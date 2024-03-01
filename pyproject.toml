@@ -10,6 +10,7 @@ python = "^3.11"
 transformers = "^4.38.1"
 torch = {version = "^2.2.1+cpu", source = "cpu_torch"}
 redis = "^5.0.2"
+redis-dict = "^2.5.0"
 
 
 [tool.poetry.group.dev.dependencies]

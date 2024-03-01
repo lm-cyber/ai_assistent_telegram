@@ -1,0 +1,10 @@
+# import os
+
+
+REDIS_HOST = "localhost"
+REDIS_PORT = 6379
+
+TOKENS_FOR_NOT_PERSONAL_SERVICE = {}
+# TOKENS_FOR_NOT_PERSONAL_SERVICE = os.environ.get("TOKENS_FOR_NOT_PERSONAL_SERVICE")
+# REDIS_HOST = os.environ.get("REDIS_HOST")
+# REDIS_PORT = os.environ.get("REDIS_PORT")
