@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.11"
 transformers = "^4.38.1"
 torch = {version = "^2.2.1+cpu", source = "cpu_torch"}
+redis = "^5.0.2"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -18,7 +19,7 @@ ruff = "^0.2.2"
 [[tool.poetry.source]]
 name = "cpu_torch"
 url = "https://download.pytorch.org/whl/cpu"
-priority = false
+default = false
 secondary = true
 
 [build-system]
